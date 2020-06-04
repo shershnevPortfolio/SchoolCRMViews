@@ -1,4 +1,4 @@
-import './block-example';
+import './select';
 
 export default () => {
   console.log('init blocks');
