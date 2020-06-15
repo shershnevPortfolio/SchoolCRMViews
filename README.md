@@ -1,19 +1,16 @@
-# FRONTEND BOILERPLATE
+# Готовая сборка webpack
+Выполнить установку - npm i
 
-## Install
-```sh
-$ git clone 
-$ rm -rf .git
-$ git init
-$ npm install
-```
+## Команды:<br/>
 
-## Develop
-```sh
-npm start       # for developing and   open  localhost:3000
-npm run build   # for build. creating folder "build"
-```
+npm run dev - запуск сборки в dev режиме<br/>
+npm run build - запуск сборки в production режиме<br/>
+npm run watch - запуск сервера в dev режиме<br/>
 
-## HTML Templates 
+## Директория src содержит исходники:<br/>
 
-> Render [Pug](https://pugjs.org/api/getting-started.html) templates
+-fonts - подключаемые шрифты <br/>
+-images - изображения <br/>
+-scripts - js -скрипты <br/>
+-styles - sass стили <br/>
+-template - pug шаблоны <br/>
