@@ -1,2 +1,10 @@
+.container
+  display: flex
+  flex-grow: 1
+  padding: 10px
 .container__item
-  margin-bottom: 20px
+  &:not(:last-child)
+    margin-bottom: 20px
+
+.page
+  flex-grow: 1

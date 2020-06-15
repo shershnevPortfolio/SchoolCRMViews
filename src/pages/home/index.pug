@@ -1,15 +1,6 @@
 extends /layout/app
 
 block content
+  include ../../blocks/aside/block
   .container
-    //- .container__item
-    //-   include ../../blocks/select/block
-    //- .container__item
-    //-   include ../../blocks/button/block
-    a(href='/') sadas
-    .container__item
-      include ../../blocks/widget/block
-    .container__item
-      include ../../blocks/aside/block
-    .container__item
-      include ../../blocks/list-block/block
+    include ../admin/index
