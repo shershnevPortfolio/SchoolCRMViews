@@ -1,10 +1,20 @@
 .list-block
+  display: flex
+  align-items: center
+  justify-content: space-between
   background-color: #3a3e52
   padding: 27px
   border-radius: 5px
 
+.list-block__test
+  width: 4px
+  height: 100%
+  background-color: #2195f2
+
 .list-block__item
   width: fit-content
+  &:not(:last-child)
+    margin-right: 20px
 
   .user__avatar
     width: 42px
