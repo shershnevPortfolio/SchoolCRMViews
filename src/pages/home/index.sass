@@ -1,25 +1,37 @@
 .container
-  display: flex
   flex-grow: 1
   padding: 10px
 
-.container__item
-  &:not(:last-child)
-    margin-bottom: 20px
+// .container__item
+//   &:not(:last-child)
+//     margin-bottom: 20px
 
 .page
   display: flex
-  flex-grow: 1
-  height: fit-content
+  flex-wrap: wrap
+  height: 100%
+  // height: fit-content
+  margin-left: -26px
 
 .page__item
+  min-width: calc(25% - 26px)
+  margin-left: 26px
   flex-grow: 1
+  margin-bottom: 20px
+
+.page__item--statistic
+  min-width: calc(75% - 26px)
+  height: 370px
+  background: red
+
+.page__item--report
+  min-width: calc(50% - 26px)
+  background: green
 
 .page__widget
-  max-width: 475px
-  padding-left: 25px
+  flex-shrink: 0
 
-.filler
-  width: 100%
-  height: 100%
-  background-color: #2f3242
+// .filler
+//   width: 100%
+//   height: 100%
+//   background-color: #2f3242
