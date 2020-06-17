@@ -12,16 +12,18 @@
   height: 100%
   // height: fit-content
   margin-left: -26px
+  margin-bottom: -20px
 
 .page__item
   min-width: calc(25% - 26px)
   margin-left: 26px
   flex-grow: 1
   margin-bottom: 20px
+  min-height: 371px
+  max-height: 480px
 
 .page__item--statistic
   min-width: calc(75% - 26px)
-  height: 370px
   background: red
 
 .page__item--report
@@ -30,6 +32,8 @@
 
 .page__widget
   flex-shrink: 0
+  flex-basis: 320px
+  overflow-y: hidden
 
 // .filler
 //   width: 100%
