@@ -1,0 +1,62 @@
+.chat
+  display: flex
+  height: 100%
+
+.chat__item
+  flex-grow: 1
+
+.chat__companion, .chat__converstions
+   box-shadow: 0 3px 80px rgba(23, 24, 32, 0.3)
+   background-color: #2b2d3c
+
+
+.chat__converstions
+  max-width: 536px
+
+.chat__main
+  display: flex
+  flex-direction: column
+  padding: 0 24px
+
+.chat__messages
+  display: flex
+  flex-direction: column
+  flex-grow: 1
+
+.chat__message-text
+  max-width: 460px
+  padding: 20px
+  border-radius: 10px
+  background-color: #404359
+  margin-bottom: 10px
+
+.chat__companion
+  max-width: 318px
+
+  .user
+    flex-direction: column
+    text-align: center
+
+  .user__avatar
+    width: 124px
+    height: 124px
+    margin-right: 0
+    margin-bottom: 39px
+
+  .user__info
+    font-size: 22px
+    font-weight: 700
+    letter-spacing: 0.44px
+
+.chat__input
+  width: 100%
+  padding: 18px
+  border-radius: 10px
+  color: #9ca1b2
+  font-family: Montserrat
+  font-size: 16px
+  font-weight: 400
+  line-height: 28px
+  letter-spacing: 0.32px
+  border: 1px solid rgba(156, 161, 178, 0.3)
+  background-color: #404359
