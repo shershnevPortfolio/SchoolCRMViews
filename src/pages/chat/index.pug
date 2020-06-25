@@ -1,16 +1,50 @@
 block content
     .chat
       .chat__item.chat__converstions
+        .conversation.conversation--active
+          include ../../blocks/user/block
+          span.conversation__last-message-date Today, 5:32 PM
         .conversation
+          include ../../blocks/user/block
+          span.conversation__last-message-date Today, 5:32 PM
+        .conversation
+          include ../../blocks/user/block
+          span.conversation__last-message-date Today, 5:32 PM
+        .conversation
+          include ../../blocks/user/block
+          span.conversation__last-message-date Today, 5:32 PM
+        .conversation
+          include ../../blocks/user/block
+          span.conversation__last-message-date Today, 5:32 PM
+        .conversation
+          include ../../blocks/user/block
+          span.conversation__last-message-date Today, 5:32 PM
       .chat__item.chat__main
         .chat__messages
           .chat__message
-            .avatar
             .chat__message-content
+              .user__avatar
+                img(src="../../images/avatar.jpg", alt="")
               .chat__message-text
                 |Ut enim ad minim veniam, quis nostrud exercitation
                 |ullamco laboris nisi ut aliquip ulla pariatur.
-              .chat__message-date 4 April 2016, 5:32 PM
+            .chat__message-date 4 April 2016, 5:32 PM
+          .chat__message--answer
+            .chat__message-content
+              .user__avatar
+                img(src="../../images/avatar.jpg", alt="")
+              .chat__message-text
+                |Ut enim ad minim veniam, quis nostrud exercitation
+                |ullamco laboris nisi ut aliquip ulla pariatur.
+            .chat__message-date 4 April 2016, 5:32 PM
         input(type="text" placeholder='Введите сообщение').chat__input
       .chat__item.chat__companion
         include ../../blocks/user/block
+        .chat__companion-info
+          .chat__comanion-info-item
+              span Email
+              span lyallroach@gmail.com
+          .chat__comanion-info-item
+              span Phone
+              span +48 500 400 300
+

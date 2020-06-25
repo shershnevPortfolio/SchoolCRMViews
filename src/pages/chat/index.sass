@@ -7,11 +7,12 @@
 
 .chat__companion, .chat__converstions
    box-shadow: 0 3px 80px rgba(23, 24, 32, 0.3)
-   background-color: #2b2d3c
+   background: #2b2d3c
 
 
 .chat__converstions
-  max-width: 536px
+  max-width: 450px
+  background: #2b2d3b
 
 .chat__main
   display: flex
@@ -23,15 +24,38 @@
   flex-direction: column
   flex-grow: 1
 
+.chat__message
+  width: fit-content
+  color: #ffffff
+
+.chat__message--answer
+  align-self: flex-end
+  color: #ffffff
+  flex-direction: row-reverse
+  .chat__message-text
+    background-color: #2196f3
+
+.chat__message-content
+  display: flex
+  align-items: flex-end
+  margin-bottom: 10px
+
+.chat__message-date
+  padding-left: 70px
+  color: #9ca1b2
+  font-family: Montserrat
+  font-size: 14px
+  font-weight: 400
+  letter-spacing: 0.42px
+
 .chat__message-text
   max-width: 460px
   padding: 20px
   border-radius: 10px
   background-color: #404359
-  margin-bottom: 10px
 
 .chat__companion
-  max-width: 318px
+  max-width: 280px
 
   .user
     flex-direction: column
@@ -48,9 +72,15 @@
     font-weight: 700
     letter-spacing: 0.44px
 
+.chat__comanion-info-item
+  display: flex
+  flex-direction: column
+  align-items: center
+
 .chat__input
   width: 100%
-  padding: 18px
+  padding: 0 18px
+  height: 51px
   border-radius: 10px
   color: #9ca1b2
   font-family: Montserrat
@@ -60,3 +90,22 @@
   letter-spacing: 0.32px
   border: 1px solid rgba(156, 161, 178, 0.3)
   background-color: #404359
+
+
+.conversation
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 41px
+  box-shadow: 0 3px 80px rgba(23, 24, 32, 0.3)
+
+  &--active
+    background: #2f3242
+
+  &:not(:last-child)
+    border-bottom: 1px solid #9ca1b2
+
+
+
+.conversation__last-message-date
+  color: #2196f3
