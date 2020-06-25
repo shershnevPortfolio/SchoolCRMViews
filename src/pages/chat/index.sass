@@ -28,12 +28,24 @@
   width: fit-content
   color: #ffffff
 
+  &:not(:last-child)
+    margin-bottom: 50px
+
 .chat__message--answer
   align-self: flex-end
   color: #ffffff
   flex-direction: row-reverse
   .chat__message-text
     background-color: #2196f3
+  .user__avatar
+      order: 1
+      margin-left: 21px
+      margin-right: 0
+
+  .chat__message-date
+    padding-left: 0
+    padding-right: 70px
+    text-align: right
 
 .chat__message-content
   display: flex
@@ -56,6 +68,7 @@
 
 .chat__companion
   max-width: 280px
+  padding: 50px 0
 
   .user
     flex-direction: column
